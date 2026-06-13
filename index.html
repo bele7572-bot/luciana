@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minha Vida ❤️</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#ff4d88,#ff85a2);
+color:white;
+text-align:center;
+overflow-x:hidden;
+}
+
+.hero{
+padding:60px 20px;
+}
+
+h1{
+font-size:3em;
+}
+
+.frase{
+max-width:800px;
+margin:auto;
+font-size:1.2em;
+line-height:1.8;
+}
+
+.contador{
+margin:30px;
+font-size:1.5em;
+font-weight:bold;
+}
+
+.galeria{
+display:flex;
+overflow-x:auto;
+gap:15px;
+padding:20px;
+}
+
+.galeria img{
+height:350px;
+border-radius:20px;
+box-shadow:0 0 15px rgba(0,0,0,.3);
+}
+
+.carta{
+max-width:900px;
+margin:auto;
+padding:30px;
+font-size:1.2em;
+line-height:1.9;
+}
+
+.botao{
+background:white;
+color:#ff4d88;
+padding:15px 30px;
+border:none;
+border-radius:50px;
+font-size:18px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.final{
+padding:50px 20px;
+font-size:1.5em;
+}
+
+.heart{
+position:fixed;
+top:-10px;
+color:white;
+animation:cair 8s linear infinite;
+}
+
+@keyframes cair{
+from{
+transform:translateY(-100px);
+}
+to{
+transform:translateY(110vh);
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+<h1>❤️ Para Minha Vida, Luciana ❤️</h1>
+
+<p class="frase">
+Se fosse para pedir algo ao tempo,
+eu pediria apenas uma coisa:
+ter te encontrado antes.
+Porque qualquer dia vivido sem você
+parece um dia que faltou amor.
+</p>
+
+<br>
+
+<a href="https://youtu.be/ilEuSwUTG80?is=ssx-cjhXczKyMCFT" target="_blank">
+<button class="botao">🎵 Nossa Música</button>
+</a>
+
+<div class="contador" id="contador"></div>
+
+</div>
+
+<h2>📸 Nossos Momentos</h2>
+
+<div class="galeria">
+
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+<img src="foto3.jpg">
+<img src="foto4.jpg">
+<img src="foto5.jpg">
+
+</div>
+
+<div class="carta">
+
+<h2>💌 Uma Carta Para Você</h2>
+
+<p>
+Minha vida,
+</p>
+
+<p>
+Hoje eu queria transformar em palavras tudo aquilo que sinto por você.
+</p>
+
+<p>
+Desde o dia 19 de junho de 2025 você se tornou o meu lugar seguro.
+</p>
+
+<p>
+Quando perdi a minha mãe, vivi a dor mais difícil da minha vida.
+Parecia que uma parte de mim tinha ido embora junto com ela.
+</p>
+
+<p>
+Mas você ficou.
+</p>
+
+<p>
+Você segurou a minha mão quando eu não tinha forças.
+Me abraçou quando eu só sabia chorar.
+Me ouviu quando eu não conseguia explicar o que sentia.
+</p>
+
+<p>
+Você foi amor quando tudo em mim era dor.
+</p>
+
+<p>
+Por isso quero que saiba:
+eu nunca vou esquecer tudo o que você fez por mim.
+</p>
+
+<p>
+Muitas pessoas enxergam a nossa diferença de idade.
+</p>
+
+<p>
+Eu enxergo a mulher incrível que esteve ao meu lado no pior momento da minha vida.
+</p>
+
+<p>
+Eu enxergo amor.
+Parceria.
+Cuidado.
+Respeito.
+</p>
+
+<p>
+E tenho orgulho de chamar você de minha.
+</p>
+
+<p>
+Obrigada por não desistir de mim.
+Obrigada por me amar.
+Obrigada por existir.
+</p>
+
+<p>
+Eu te amo, minha vida. ❤️
+</p>
+
+</div>
+
+<div class="final">
+
+❤️ Luciana & Isabele ❤️
+
+<br><br>
+
+"Você chegou como amor,
+ficou como abrigo
+e se tornou a parte mais bonita da minha história."
+
+</div>
+
+<script>
+
+const inicio = new Date("2025-06-19");
+
+function atualizarContador(){
+
+const agora = new Date();
+const diff = agora - inicio;
+
+const dias = Math.floor(diff / (1000*60*60*24));
+const horas = Math.floor((diff/(1000*60*60))%24);
+const minutos = Math.floor((diff/(1000*60))%60);
+
+document.getElementById("contador").innerHTML =
+"⏳ Juntas há " + dias + " dias, " + horas + " horas e " + minutos + " minutos ❤️";
+}
+
+setInterval(atualizarContador,1000);
+
+function criarCoracao(){
+
+const heart=document.createElement("div");
+
+heart.classList.add("heart");
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(Math.random()*20+15)+"px";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},8000);
+}
+
+setInterval(criarCoracao,300);
+
+</script>
+
+</body>
+</html>
