@@ -3,239 +3,303 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Minha Vida ❤️</title>
+<title>Luciana ❤️ Isabele</title>
 
 <style>
-body{
+
+*{
 margin:0;
-font-family:Arial,sans-serif;
-background:linear-gradient(135deg,#ff4d88,#ff85a2);
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#111;
 color:white;
-text-align:center;
 overflow-x:hidden;
 }
 
 .hero{
-padding:60px 20px;
+height:100vh;
+background:url('IMG-20251119-WA0162.jpg') center center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+position:relative;
 }
 
-h1{
-font-size:3em;
+.hero::before{
+content:'';
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.55);
 }
 
-.frase{
-max-width:800px;
+.hero-content{
+position:relative;
+z-index:2;
+padding:20px;
+}
+
+.hero h1{
+font-size:4rem;
+}
+
+.hero p{
+font-size:1.4rem;
+max-width:700px;
 margin:auto;
-font-size:1.2em;
-line-height:1.8;
+margin-top:20px;
+}
+
+.section{
+padding:80px 25px;
+text-align:center;
+}
+
+.section h2{
+font-size:2.5rem;
+margin-bottom:30px;
+color:#ff8eb0;
+}
+
+.text{
+max-width:900px;
+margin:auto;
+line-height:2;
+font-size:1.2rem;
 }
 
 .contador{
-margin:30px;
-font-size:1.5em;
+font-size:2rem;
+margin-top:30px;
 font-weight:bold;
 }
 
 .galeria{
-display:flex;
-overflow-x:auto;
-gap:15px;
-padding:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+padding:30px;
 }
 
 .galeria img{
-height:350px;
-border-radius:20px;
-box-shadow:0 0 15px rgba(0,0,0,.3);
+width:100%;
+height:450px;
+object-fit:cover;
+border-radius:25px;
 }
 
-.carta{
-max-width:900px;
+footer{
+padding:100px 20px;
+text-align:center;
+background:#181818;
+}
+
+footer h1{
+font-size:3rem;
+color:#ff8eb0;
+margin-bottom:20px;
+}
+
+footer p{
+font-size:1.3rem;
+line-height:2;
+max-width:800px;
 margin:auto;
-padding:30px;
-font-size:1.2em;
-line-height:1.9;
 }
 
 .botao{
-background:white;
-color:#ff4d88;
-padding:15px 30px;
-border:none;
+margin-top:30px;
+display:inline-block;
+background:#ff8eb0;
+color:white;
+padding:15px 35px;
 border-radius:50px;
-font-size:18px;
-cursor:pointer;
+text-decoration:none;
 font-weight:bold;
-}
-
-.final{
-padding:50px 20px;
-font-size:1.5em;
 }
 
 .heart{
 position:fixed;
-top:-10px;
-color:white;
+top:-50px;
 animation:cair 8s linear infinite;
 }
 
 @keyframes cair{
-from{
-transform:translateY(-100px);
-}
 to{
-transform:translateY(110vh);
+transform:translateY(120vh);
 }
 }
+
 </style>
 </head>
-
 <body>
 
-<div class="hero">
+<section class="hero">
 
-<h1>❤️ Para Minha Vida, Luciana ❤️</h1>
+<div class="hero-content">
 
-<p class="frase">
+<h1>❤️ Luciana & Isabele ❤️</h1>
+
+<p>
+
+Minha vida...
+
 Se fosse para pedir algo ao tempo,
 eu pediria apenas uma coisa:
+
 ter te encontrado antes.
-Porque qualquer dia vivido sem você
-parece um dia que faltou amor.
+
 </p>
 
-<br>
+</div>
 
-<a href="https://youtu.be/ilEuSwUTG80?is=ssx-cjhXczKyMCFT" target="_blank">
-<button class="botao">🎵 Nossa Música</button>
-</a>
+</section>
+
+<section class="section">
+
+<h2>⏳ Nossa História</h2>
 
 <div class="contador" id="contador"></div>
 
-</div>
+</section>
 
-<h2>📸 Nossos Momentos</h2>
+<section class="section">
+
+<h2>📸 Nós Duas</h2>
 
 <div class="galeria">
 
-<img src="foto1.jpg">
-<img src="foto2.jpg">
-<img src="foto3.jpg">
-<img src="foto4.jpg">
-<img src="foto5.jpg">
+<img src="IMG-20251119-WA0162.jpg">
+<img src="IMG-20260612-WA0201.jpg">
+<img src="IMG-20260612-WA0202.jpg">
+<img src="IMG-20260612-WA0203.jpg">
+<img src="IMG-20260612-WA0204.jpg">
 
 </div>
 
-<div class="carta">
+</section>
 
-<h2>💌 Uma Carta Para Você</h2>
+<section class="section">
+
+<h2>💌 Para Minha Vida</h2>
+
+<div class="text">
 
 <p>
-Minha vida,
-</p>
 
-<p>
 Hoje eu queria transformar em palavras tudo aquilo que sinto por você.
-</p>
 
-<p>
 Desde o dia 19 de junho de 2025 você se tornou o meu lugar seguro.
-</p>
 
-<p>
 Quando perdi a minha mãe, vivi a dor mais difícil da minha vida.
+
 Parecia que uma parte de mim tinha ido embora junto com ela.
-</p>
 
-<p>
 Mas você ficou.
-</p>
 
-<p>
 Você segurou a minha mão quando eu não tinha forças.
+
 Me abraçou quando eu só sabia chorar.
+
 Me ouviu quando eu não conseguia explicar o que sentia.
-</p>
 
-<p>
 Você foi amor quando tudo em mim era dor.
-</p>
 
-<p>
 Por isso quero que saiba:
+
 eu nunca vou esquecer tudo o que você fez por mim.
-</p>
 
-<p>
 Muitas pessoas enxergam a nossa diferença de idade.
-</p>
 
-<p>
 Eu enxergo a mulher incrível que esteve ao meu lado no pior momento da minha vida.
-</p>
 
-<p>
 Eu enxergo amor.
+
 Parceria.
+
 Cuidado.
+
 Respeito.
-</p>
 
-<p>
 E tenho orgulho de chamar você de minha.
-</p>
 
-<p>
 Obrigada por não desistir de mim.
-Obrigada por me amar.
-Obrigada por existir.
-</p>
 
-<p>
+Obrigada por me amar.
+
+Obrigada por existir.
+
 Eu te amo, minha vida. ❤️
+
 </p>
 
 </div>
 
-<div class="final">
+</section>
+
+<footer>
+
+<h1>❤️ Feliz Dia dos Namorados ❤️</h1>
+
+<p>
+
+Você não esteve apenas nos meus melhores momentos.
+
+Você escolheu ficar no meu pior.
+
+E é por isso que eu vou te amar em todos os dias da minha vida.
+
+Obrigado por segurar a minha mão quando eu mais precisei.
+
+Que este seja apenas o primeiro de muitos Dias dos Namorados que ainda vamos viver juntas.
 
 ❤️ Luciana & Isabele ❤️
 
-<br><br>
+</p>
 
-"Você chegou como amor,
-ficou como abrigo
-e se tornou a parte mais bonita da minha história."
+<a class="botao"
+href="https://youtu.be/ilEuSwUTG80?is=ssx-cjhXczKyMCFT"
+target="_blank">
 
-</div>
+🎵 Nossa Música
+
+</a>
+
+</footer>
 
 <script>
 
 const inicio = new Date("2025-06-19");
 
-function atualizarContador(){
+function atualizar(){
 
 const agora = new Date();
+
 const diff = agora - inicio;
 
-const dias = Math.floor(diff / (1000*60*60*24));
-const horas = Math.floor((diff/(1000*60*60))%24);
-const minutos = Math.floor((diff/(1000*60))%60);
+const dias = Math.floor(diff/(1000*60*60*24));
 
 document.getElementById("contador").innerHTML =
-"⏳ Juntas há " + dias + " dias, " + horas + " horas e " + minutos + " minutos ❤️";
+"❤️ Juntas há " + dias + " dias ❤️";
+
 }
 
-setInterval(atualizarContador,1000);
+setInterval(atualizar,1000);
 
 function criarCoracao(){
 
 const heart=document.createElement("div");
 
-heart.classList.add("heart");
-
 heart.innerHTML="❤️";
+
+heart.classList.add("heart");
 
 heart.style.left=Math.random()*100+"vw";
 
@@ -246,6 +310,7 @@ document.body.appendChild(heart);
 setTimeout(()=>{
 heart.remove();
 },8000);
+
 }
 
 setInterval(criarCoracao,300);
